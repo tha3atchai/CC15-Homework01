@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework#1 MyResume</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <h1>RESUME</h1>
+    <div class="content_container">
+      <nav>
+        <label class="switch">
+          <input placeholder="#" type="checkbox" checked />
+          <span onclick="myFunction()" class="slider round"></span>
+        </label>
+        <div>
+          <a href="../index.html">Home</a>
+          <a  href="./education.html">Education & Work</a>
+          <a class="active" href="./contact.html">Contact</a>
+        </div>
+      </nav>
+      <div class="profile">
+        <div class="profile_left">
+          <h4>
+            Thawatchai On-in <br />
+            Full-Stack Developer
+          </h4>
+          <p>
+            Energeric web developer with certificated from Codecamp Thailand
+            #15. Codecamp is one of the best developer's bootcamp in Thailand.
+            Front-end(React), Backdend(Node & Express) and Database(MySQL).
+          </p>
+        </div>
+        <div class="pic">
+          <div class="image"></div>
+        </div>
+        <div class="headcontent">
+          <h1>Contact</h1>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact_info">
+            <form>
+                <h1>Enter your info.</h1>
+                <label for="Fname">Your name :</label>
+                <input placeholder="your name..." name="Fname" type="text">
+                <br>
+                <label for="Fname">Your Email :</label>
+                <input placeholder="your email..." name="Fname" type="email">
+                <br>
+                <label for="Gender">Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="Gender" id="Gender">
+                    <option value="none" selected disabled hidden>select..</option>
+                    <option value="male" >Male</option>
+                    <option value="female" >Female</option>
+                </select>
+                <br>
+                <label for="Message">Message : &nbsp;&nbsp;</label>
+                <textarea title="contact_me" name="msg" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input class="button" type="submit" value="submit">
+                <input class="button" type="reset">
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+      <div class="footer_in">
+        <nav>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Github</a>
+        </nav>
+        <h3>
+          &copy; 2023 <br />
+          tha3atchai
+        </h3>
+      </div>
+    </footer>
+      <script>
+          function myFunction() {
+              let element = document.getElementsByClassName("content_container");
+              let elementimg = document.getElementsByClassName("image");
+              element[0].classList.toggle("dark-mode");
+              elementimg[0].classList.toggle("dark-mode-pic");
+            }
+            </script>
+</body>
+</html>

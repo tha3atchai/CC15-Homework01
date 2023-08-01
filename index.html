@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework#1 MyResume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1>RESUME</h1>
+    <div class="content_container">
+      <nav>
+        <label class="switch">
+          <input placeholder="#" type="checkbox" checked>
+          <span onclick="myFunction()" class="slider round"></span>
+        </label>
+        <div>
+          <a class="active" href="./index.html">Home</a>
+          <a href="./pages/education.html">Education & Work</a>
+          <a href="./pages/contact.html">Contact</a>
+        </div>
+      </nav>
+      <div class="profile">
+        <div class="profile_left">
+          <h4>
+            Thawatchai On-in <br />
+            Full-Stack Developer
+          </h4>
+          <p>
+            Energeric web developer with certificated from Codecamp Thailand
+            #15. Codecamp is one of the best developer's bootcamp in Thailand.
+            Front-end(React), Backdend(Node & Express) and Database(MySQL).
+          </p>
+        </div>
+        <div class="pic">
+          <div class="image"></div>
+        </div>
+        <div class="headcontent">
+          <h1>Personal Info</h1>
+        </div>
+      </div>
+      <div class="personalinfo">
+        <div class="personalinfo_info">
+          <h2>
+            <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Location: Bkk,
+            Thailand
+          </h2>
+          <h2>
+            <i class="fa-solid fa-phone"></i> &nbsp; Phone: (66)66-6666666
+          </h2>
+          <h2>
+            <i class="fa-solid fa-envelope"></i> &nbsp; E-mail: thawatchaionin@gmail.com
+          </h2>
+          <h2><i class="fa-brands fa-line"></i> &nbsp; Line ID: tha3atchai</h2>
+        </div>
+        <div class="personalinfo_bg"></div>
+        <div class="headcontent_skills">
+          <h1>Skills</h1>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="skills_left">
+          <h2>
+            <i class="fa-brands fa-figma"></i> &nbsp; UX/UI Design (Figma)
+          </h2>
+          <h2><i class="fa-brands fa-html5"></i> &nbsp; HTML</h2>
+          <h2><i class="fa-brands fa-css3-alt"></i> &nbsp; CSS</h2>
+          <h2><i class="fa-brands fa-js"></i> &nbsp; JavaScript</h2>
+        </div>
+        <div class="skills_right">
+          <h2><i class="fa-brands fa-git-alt"></i> &nbsp; Git</h2>
+          <h2><i class="fa-brands fa-react"></i> &nbsp; React.js</h2>
+          <h2><i class="fa-brands fa-node-js"></i> &nbsp; Node.JS</h2>
+          <h2><img src="./mysql-svgrepo-com.svg" alt="" /> &nbsp; MySQL</h2>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_in">
+        <nav>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Github</a>
+        </nav>
+        <h3>
+          &copy; 2023 <br />
+          tha3atchai
+        </h3>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+         let element = document.getElementsByClassName("content_container");
+         let elementimg = document.getElementsByClassName("image");
+         element[0].classList.toggle("dark-mode");
+         elementimg[0].classList.toggle("dark-mode-pic");
+      }
+      </script>
+  </body>
+</html>

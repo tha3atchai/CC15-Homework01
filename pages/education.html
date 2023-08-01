@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework#1 MyResume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>RESUME</h1>
+    <div class="content_container">
+      <nav>
+        <label class="switch">
+          <input placeholder="#" type="checkbox" checked />
+          <span onclick="myFunction()" class="slider round"></span>
+        </label>
+        <div>
+          <a href="../index.html">Home</a>
+          <a class="active" href="./education.html">Education & Work</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+      <div class="profile">
+        <div class="profile_left">
+          <h4>
+            Thawatchai On-in <br />
+            Full-Stack Developer
+          </h4>
+          <p>
+            Energeric web developer with certificated from Codecamp Thailand
+            #15. Codecamp is one of the best developer's bootcamp in Thailand.
+            Front-end(React), Backdend(Node & Express) and Database(MySQL).
+          </p>
+        </div>
+        <div class="pic">
+          <div class="image"></div>
+        </div>
+        <div class="headcontent">
+          <h1>Education</h1>
+        </div>
+      </div>
+      <div class="personalinfo">
+        <div class="personalinfo_info_education">
+          <div class="table_container">
+            <i class="fa-solid fa-user-graduate"></i>
+            <table>
+              <tr>
+                <td class="hidden_td">xxxxxxxxxxxx</td>
+                <th colspan="2">Year</th>
+                <th rowspan="2">School/University</th>
+              </tr>
+              <tr>
+                <td></td>
+                <th>from</th>
+                <th>to</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>2019</td>
+                <td>2022</td>
+                <td>ABC University</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>2015</td>
+                <td>2019</td>
+                <td>ABC High school</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>2009</td>
+                <td>2014</td>
+                <td><div>ABC Elmentary school</div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="personalinfo_bg"></div>
+        <div class="headcontent_skills">
+          <h1>Work</h1>
+        </div>
+      </div>
+      <div class="workinfo">
+        <div class="personalinfo_bg"></div>
+        <div class="workinfo_info">
+          <div class="table_container">
+            <table class="table_work">
+              <tr>
+                <td>Year</td>
+                <td>Job Title</td>
+                <td>Company</td>
+                <td>xxxxxxxx</td>
+              </tr>
+              <tr>
+                <td>2021</td>
+                <td>Full Stack</td>
+                <td>XYZ</td>
+                <td>xxxxxxx</td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td><div>Front Developer</div></td>
+                <td>DEF</td>
+                <td>xxxxxxx</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+                <td>Junior Backend</td>
+                <td>ABC</td>
+                <td>xxxxxxx</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>Junior Backend</td>
+                <td>ABC</td>
+                <td>xxxxxxx</td>
+              </tr>
+            </table>
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_in">
+        <nav>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Github</a>
+        </nav>
+        <h3>
+          &copy; 2023 <br />
+          tha3atchai
+        </h3>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        let element = document.getElementsByClassName("content_container");
+        let elementimg = document.getElementsByClassName("image");
+        element[0].classList.toggle("dark-mode");
+        elementimg[0].classList.toggle("dark-mode-pic");
+      }
+    </script>
+  </body>
+</html>
